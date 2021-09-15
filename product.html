@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script><!-- bootstrap link -->
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+	</script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"><!-- linking my html to css -->
+	<link href="product.css" rel="stylesheet">
+	<title>E-complete Task</title>
+</head>
+<body>
+	<!-- Navbar  -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Electronics.</a> <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu"  type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="category.html">Category</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="product.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="checkout.html">Checkout</a>
+					</li>
+				</ul>
+			</div>
+			<div class="cart">
+				<button class="btn btn-primary" data-target="#cart" data-toggle="modal" type="button">Cart (<span class="total-count"></span>)</button> <button class="clear-cart btn btn-danger">Clear Cart</button>
+			</div>
+		</div>
+	</nav>
+	<section class="container sproduct my-5 pt-5">
+		<div class="row mt-5">
+			<div class="col-lg-5 col-md-12 col-12">
+				<!-- Main Image -->
+				<img class="img-fluid w-100 pb-2" id="ProductImg" src="pics/product1.jfif"> <!-- Small images-->
+				<div class="small-img-group">
+					<div class="small-img-col"><img class="small-img" src="pics/product2.jfif" width="100%"></div>
+					<div class="small-img-col"><img class="small-img" src="pics/product3.jfif" width="100%"></div>
+					<div class="small-img-col"><img class="small-img" src="pics/product4.jfif" width="100%"></div>
+					<div class="small-img-col"><img class="small-img" src="pics/product5.jfif" width="100%"></div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-12 col-12">
+				<h6>E-complete T-shirt</h6>
+				<h3 class="py-4">Men's Fashion T Shirts</h3>
+				<h2>R150.00</h2><select class="my-3">
+					<option>
+						Select Size
+					</option>
+					<option>
+						XL
+					</option>
+					<option>
+						XXL
+					</option>
+					<option>
+						Small
+					</option>
+					<option>
+						Large
+					</option>
+				</select> <input type="number" value="1"> <a class="btn btn-success cart-button btn-block add-to-cart" data-name="T-shirt" data-price="100" href="#">Add to cart</a>
+				<h4 class="mt-5 mb-5">Product Details</h4><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores perspiciatis at animi repellat illum voluptatum sequi provident, eligendi laudantium eius consectetur beatae qui, eum, error harum ut debitis aliquid. Minima! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut fugit vitae provident doloremque quis alias laudantium totam molestiae, rerum mollitia nemo, suscipit quisquam. Beatae laboriosam adipisci quo deserunt commodi!</span>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<div class="container">
+		<h2>DIFFERENT PRODUCTS</h2>
+		<div class="row">
+			<div class="col"><img class="img-fluid d-sm-block pb-5" src="pics/pexels-lisa-1068866.jpg"></div>
+			<div class="col"><img class="img-fluid d-sm-block pb-5" src="pics/pexels-jude-stevens-984619.jpg"></div>
+			<div class="col"><img class="img-fluid d-sm-block pb-5" src="pics/pexels-matheus-bertelli-2905238.jpg"></div>
+			<div class="col"><img class="img-fluid d-sm-block pb-5" src="pics/pexels-karolina-grabowska-4210866.jpg"></div>
+		</div>
+	</div>
+	<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="cart" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Cart</h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<table class="show-cart table"></table>
+					<div>
+						Total price: R<span class="total-cart"></span>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button> <a class="btn btn-primary" href="checkout.html" target="_blank" type="button">Order now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<h6>About</h6>
+					<p class="text-justify">E-complete Task Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam hic voluptates sint impedit recusandae illo et odit iusto laborum porro temporibus quidem, rem sit ducimus praesentium? Quasi, quos repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aut. Beatae amet sunt esse voluptates soluta explicabo magnam ad dolore, magni, eum cum rem expedita ipsa, dolor libero earum voluptas! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<h6>E-Complete Task</h6>
+					<ul class="footer-links">
+						<li>
+							<a href="">HTML5</a>
+						</li>
+						<li>
+							<a href="">CSS3</a>
+						</li>
+						<li>
+							<a href="">JavaScript</a>
+						</li>
+						<li>
+							<a href="">Bootstrap</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<h6>Quick Links</h6>
+					<ul class="footer-links">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="category.html">Category</a>
+						</li>
+						<li>
+							<a href="product.html">Products</a>
+						</li>
+						<li>
+							<a href="checkout.html">Checkout</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-6 col-xs-12">
+					<p class="copyright-text">E-complete Task &copy; 2021 Junain Sedick Reynecke <a href="https://dev-junains-portfolio.pantheonsite.io">PortfolioLink</a>.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+	</script> 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script> 
+	<script src="product.js">
+	</script>
+</body>
+</html>
