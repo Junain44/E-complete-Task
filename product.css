@@ -5,10 +5,15 @@
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 }
+
 .btn {
 	font-size: 17px;
 	font-weight: 500;
-	margin-left: 13px;
+	margin-left: 0px;
+}
+
+h5{
+	padding-top: 40px;
 }
 .small-img-group {
 	display: flex;

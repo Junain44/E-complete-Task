@@ -10,28 +10,69 @@
 .btn {
 	font-size: 17px;
 	font-weight: 500;
-	margin-left: 13px;
+	margin-left: 0px;
 }
-/* STYLING OF HERO SECTION */
 
-.hero {
-	background-image: url(/pics/prod7.jpg);
+/*  */
+.carousel-item{
+	min-height: 300px;
+	background: no-repeat scroll center scroll;
 	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 100vh;
-	position: relative;
-	display: flex;
-	align-items: center;
-	width: 100%;
 }
-.apparels {
-	background-color: #000;
-	opacity: .7;
-	padding: 20px;
-	margin-top: 20em;
-}
-/* STYLING OF HEADING SECTION */
 
+.carousel-item::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #000;
+	opacity: 0.3;
+}
+
+.carousel-caption{
+	bottom: 180px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.carousel-caption h5{
+	font-size: 100px;
+	font-weight: 700;
+}
+
+.carousel-caption p{
+	font-size: 18px;
+	top: 2rem;
+}
+
+.slider-btn{
+	
+	margin-top: 30px;
+}
+
+.slider-btn .btn{
+	background-color: #3366cc;
+	color: #fff;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	padding: 1.5rem 2rem;
+	font-size: 1rem;
+	margin-right: 15px;
+}
+
+.slider-btn .btn-2{
+	color:white;
+	background-color: rgb(255, 0, 0);
+}
+
+
+/* STYLING OF HEADING SECTION */
 h2 {
 	text-align: center;
 	padding-bottom: 30px;
@@ -40,8 +81,8 @@ h2 {
 	text-align: center;
 	padding-top: 50px;
 }
-/* STYLING OF FOOTER */
 
+/* STYLING OF FOOTER */
 .site-footer {
 	background-color: #26272b;
 	padding: 45px 0 20px;
@@ -87,6 +128,8 @@ h2 {
 .copyright-text {
 	margin: 0
 }
+
+
 /* RESPONSIVENESS SECTION 
 CART BUTTONS */
 
@@ -104,6 +147,35 @@ CART BUTTONS */
 		margin: 5px;
 		margin-left: 21px;
 	}
+	.carousel-caption{
+		bottom: 25px;
+	}
+	.carousel-caption h5{
+		font-size: 40px;
+	}
+	.slider-btn{
+		padding: 0;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 200px 200px;
+	}
+	.slider-btn .btn{
+		padding: 1rem 2rem;
+	}
+	.carousel-caption p{
+		font-size: 15px;
+	}
+
+	@media (max-width: 500px)
+	{
+		.carousel-item{
+			margin-top: 60px;
+			background-size: cover;
+			min-height:auto ;
+		}
+	}
+
+
 	/* TRENDING SECTION */
 	@media (max-width:991px) {
 		.row {
@@ -111,6 +183,10 @@ CART BUTTONS */
 		}
 	}
 }
+
+
+
+
 /* FOOTER SECTION */
 
 @media (max-width:991px) {

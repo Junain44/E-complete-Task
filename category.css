@@ -5,25 +5,14 @@
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 }
+/* ADD TO CART BUTTONS */
 .btn {
 	font-size: 17px;
 	font-weight: 500;
-	margin-left: 13px;
+	margin-left: 0px;
 }
-/*====Bread Crumbs Section===*/
 
-.breadcrumb {
-	position: relative;
-	z-index: 1;
-	background: #00ffff;
-	margin-bottom: 0px!important;
-}
-.breadcrumb .crumb-inner p {
-	font-size: 15px;
-	color: rgb(0, 0, 0);
-}
 /*==========Sidebar Section===*/
-
 .side-area {
 	padding-bottom: 14px;
 	margin-bottom: 30px;
